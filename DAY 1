@@ -1,0 +1,23 @@
+import javax.swing.*;
+
+import java.awt.Color;
+
+import java.awt.*;
+
+class front {
+    public static void main(String[] pk) {
+        JFrame jf = new JFrame(); // jframe
+        JFrame jf1 = new JFrame();
+        jf.setSize(200, 200);
+        jf.setLocationRelativeTo(null); // no parent so null
+        jf1.setLocationRelativeTo(jf); // wrt jf frame
+        jf.setVisible(true);
+        jf1.setVisible(true);
+        jf1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 3 EXIT ON CLOSE //0 DO_NOTHING_ON_CLOSE //1
+        jf.getContentPane().setBackground(Color.cyan); // DISPOSE_ON_CLOSE //2 HIDE_ON_CLOSE // OR WE CAN PASS
+
+        // INTEGER
+        jf1.setResizable(false);
+    }
+
+}
